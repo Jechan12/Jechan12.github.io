@@ -9,20 +9,20 @@
     {% if site.about == true %}
       {% if page.title != "About" %}
         <li class="item">
-          <a class="link" href="{{ site.url }}/about">About</a>
+           <a class="link {% if page.url contains '/about' %}active{% endif %}" href="{{ site.url }}/about">About</a>
         </li>
       {% endif %}
     {% endif %}
 
     <li class="item">
       {% if page.title != "Research" %}
-        <a class="link" href="{{ site.url }}/research">Research</a>
+        <a class="link {% if page.url contains '/research' %}active{% endif %}" href="{{ site.url }}/research">Research</a>
       {% endif %}
     </li>
 
     <li class="item">
       {% if page.title != "Publications" %}
-        <a class="link" href="{{ site.url }}/publications">Publications</a>
+        <a class="link {% if page.url contains '/publications' %}active{% endif %}" href="{{ site.url }}/publications">Publications</a>
       {% endif %}
     </li>
 
