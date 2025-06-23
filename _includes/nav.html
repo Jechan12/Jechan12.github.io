@@ -2,47 +2,35 @@
   <ul class="list">
     {% if page.title != "Home" %}
       <li class="item">
-        <a class="link" href="{{ site.url }}/">Home</a>
+        <a class="link {% if page.url == '/' %}active{% endif %}" href="{{ site.url }}/">Home</a>
       </li>
     {% endif %}
 
-    {% if site.about == true %}
-      {% if page.title != "About" %}
-        <li class="item">
-           <a class="link {% if page.url contains '/about' %}active{% endif %}" href="{{ site.url }}/about">About</a>
-        </li>
-      {% endif %}
-    {% endif %}
-
     <li class="item">
-      {% if page.title != "Research" %}
-        <a class="link {% if page.url contains '/research' %}active{% endif %}" href="{{ site.url }}/research">Research</a>
-      {% endif %}
+      <a class="link {% if page.url contains '/about' %}active{% endif %}" href="{{ site.url }}/about">About</a>
     </li>
 
     <li class="item">
-      {% if page.title != "Publications" %}
-        <a class="link {% if page.url contains '/publications' %}active{% endif %}" href="{{ site.url }}/publications">Publications</a>
-      {% endif %}
+      <a class="link {% if page.url contains '/research' %}active{% endif %}" href="{{ site.url }}/research">Research</a>
     </li>
 
-    {% if site.projects == true %}
-      {% if page.title != "Projects" %}
-        <li class="item">
-          <a class="link" href="{{ site.url }}/projects">Projects</a>
-        </li>
-      {% endif %}
+    <li class="item">
+      <a class="link {% if page.url contains '/publications' %}active{% endif %}" href="{{ site.url }}/publications">Publications</a>
+    </li>
+
+    {% if site.projects %}
+      <li class="item">
+        <a class="link {% if page.url contains '/projects' %}active{% endif %}" href="{{ site.url }}/projects">Projects</a>
+      </li>
     {% endif %}
 
-    {% if site.blog == true %}
-      {% if page.title != "Blog" %}
-        <li class="item">
-          <a class="link" href="{{ site.url }}/blog">Blog</a>
-        </li>
-      {% endif %}
+    {% if site.blog %}
+      <li class="item">
+        <a class="link {% if page.url contains '/blog' %}active{% endif %}" href="{{ site.url }}/blog">Blog</a>
+      </li>
     {% endif %}
 
-    {% if site.resume == true %}
+    {% if site.resume %}
       <li class="item">
         <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Résumé</a>
       </li>
