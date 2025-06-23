@@ -100,6 +100,10 @@ compress_html:
       - development
       - stage
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 exclude:
   [
     "README.md",
