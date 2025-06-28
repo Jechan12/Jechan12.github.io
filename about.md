@@ -21,7 +21,8 @@ Email: 124045@kist.re.kr / jeonjechan@gmail.com
 
 - Programming: `C++`, `CUDA` , `Octave`
 - Tools:  `MuJoCo`, `qpOASES`, `Git`
-- Research Interests: Whole Body Control(WBC), Optimization-based control, Wheeled-legged robot
+- Research Interests: Whole Body Control(WBC), Optimization-based control, 
+GPU-Based Control, Wheeled-legged robot 
 
 
 ## 🎓 Education
@@ -42,6 +43,6 @@ Email: 124045@kist.re.kr / jeonjechan@gmail.com
 
 - **Undergraduate Research Intern**, Human-System Interaction Research Lab, Hongik University   
   *2022-2023*  
-  - Participated in CAD modeling and structural design of robotic mechanisms  
+  - Participated in structural design of haptic, robotic mechanisms  
   - [Lab Homepage](https://sites.google.com/view/hsir-lab)
 
