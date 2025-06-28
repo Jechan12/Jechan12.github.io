@@ -10,16 +10,18 @@ permalink: /about/
 School of Electrical Engineering, Korea University
 Joint M.S. Program with Korea Institute of Science and Technology (KIST)
 
+Email: 124045@kist.re.kr / jeonjechan@gmail.com   
+
 Advisors:  
 - Dr. Yonghwan Oh, Korea Institute of Science and Technology (KIST)  
 - Prof. Youngsu Cha, Korea University  
-Email: 124045@kist.re.kr / jeonjechan@gmail.com   
+
 
 [Humanoid Robotics Lab Homepage](https://sites.google.com/view/humanoids-kist/Home?authuser=0)
 
 ## 💬 Skills & Interests
 
-- Programming: `C++`, `CUDA` , `Octave`
+- Programming: `C++`, `CUDA` 
 - Tools:  `MuJoCo`, `qpOASES`, `Git`
 - Research Interests: Whole Body Control(WBC), Optimization-based control, 
 GPU-Based Control, Wheeled-legged robot 
