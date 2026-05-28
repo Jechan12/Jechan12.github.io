@@ -1,0 +1,21 @@
+.section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.title {
+    font-size: 2.25rem;
+    margin-bottom: var(--spacing-xl);
+    position: relative;
+    display: inline-block;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}

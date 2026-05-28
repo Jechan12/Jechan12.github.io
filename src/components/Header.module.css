@@ -1,0 +1,133 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    z-index: 1000;
+    transition: all var(--transition-normal);
+    background: transparent;
+    backdrop-filter: blur(0px);
+}
+
+.scrolled {
+    background: rgba(15, 23, 42, 0.8);
+    /* Dark mode default */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+}
+
+@media (prefers-color-scheme: light) {
+    .scrolled {
+        background: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+}
+
+.desktopNav {
+    display: none;
+    gap: var(--spacing-lg);
+    list-style: none;
+}
+
+.navLink {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.navLink:hover,
+.navLink.active {
+    color: var(--color-text);
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width var(--transition-fast);
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+    width: 100%;
+}
+
+.mobileMenuBtn {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.mobileNav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    transform: translateY(-150%);
+    transition: transform var(--transition-normal);
+    z-index: 999;
+}
+
+.mobileNav.open {
+    transform: translateY(0);
+    box-shadow: var(--shadow-lg);
+}
+
+.mobileNavList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.mobileNavLink {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    padding: var(--spacing-sm) 0;
+}
+
+.mobileNavLink.active {
+    color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .desktopNav {
+        display: flex;
+    }
+
+    .mobileMenuBtn {
+        display: none;
+    }
+
+    .mobileNav {
+        display: none;
+    }
+}
