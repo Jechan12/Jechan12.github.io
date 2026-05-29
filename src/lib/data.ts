@@ -77,7 +77,7 @@ export const research = [
         description: "Whole-Body Control for wheeled-legged humanoid systems using Quadratic Programming.",
         details: "This research focuses on developing a robust Whole-Body Control (WBC) framework for wheeled-legged robots. By utilizing Quadratic Programming (QP), we optimize the robot's motion to handle complex tasks while maintaining balance and stability. The framework decouples the control of wheels and legs, allowing for agile maneuvers and stable locomotion on uneven terrain.",
         image: "/research/QP_Overview.png", // Placeholder
-        videoId: "", // Add YouTube video ID here (e.g., "dQw4w9WgXcQ")
+        videoId: "K1Mhlr1P4Ls", // Add YouTube video ID here (e.g., "dQw4w9WgXcQ")
     },
     {
         id: "gpu-control",
@@ -108,7 +108,7 @@ export const publications = [
     {
         title: "Whole-Body Stabilization of Wheeled Bipedal Robots via Decoupled Control of Wheels and Legs",
         authors: "**Jechan Jeon**, Jaewoo An, Youngsu Cha, Yonghwan Oh",
-        venue: "IEEE/RSJ International Conference on INTELLIGENT ROBOTS & SYSTEMS (IROS)",
+        venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
         year: "2025",
         link: "https://ieeexplore.ieee.org/abstract/document/11247552",
     },
