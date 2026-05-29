@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Youtube } from 'lucide-react';
 import styles from './List.module.css';
 
 interface ListItemProps {
@@ -7,6 +7,7 @@ interface ListItemProps {
     meta?: string;
     description?: string;
     link?: string;
+    video?: string;
 }
 
 export default function List({ items }: { items: ListItemProps[] }) {
@@ -40,7 +41,16 @@ export default function List({ items }: { items: ListItemProps[] }) {
                             </p>
                         )}
                         {item.description && <p className={styles.description}>{item.description}</p>}
-                        {item.meta && <span className={styles.meta}>{item.meta}</span>}
+                        {(item.meta || item.video) && (
+                            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+                                {item.meta && <span className={styles.meta}>{item.meta}</span>}
+                                {item.video && (
+                                    <a href={item.video} target="_blank" rel="noopener noreferrer" className={styles.videoLink}>
+                                        <Youtube size={14} /> Video
+                                    </a>
+                                )}
+                            </div>
+                        )}
                     </div>
                 </div>
             ))}

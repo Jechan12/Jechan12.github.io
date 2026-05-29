@@ -104,6 +104,7 @@ export const publications = [
         venue: "IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM) ",
         year: "2026",
         link: "",
+        video: "",
     },
     {
         title: "Whole-Body Stabilization of Wheeled Bipedal Robots via Decoupled Control of Wheels and Legs",
@@ -111,6 +112,7 @@ export const publications = [
         venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
         year: "2025",
         link: "https://ieeexplore.ieee.org/abstract/document/11247552",
+        video: "https://www.youtube.com/watch?v=K1Mhlr1P4Ls",
     },
     {
         title: "Decoupled MPC for ZMP-Based Lateral Stability in Two-Wheeled Inverted Pendulum with Roll Joint",
@@ -118,6 +120,7 @@ export const publications = [
         venue: "Annual Conference of the IEEE Industrial Electronics Society (IECON)",
         year: "2025",
         link: "https://doi.org/10.1109/IECON58223.2025.11221125",
+        video: "",
     },
     {
         title: "Simultaneous Tracking and Balancing Control of Two-Wheeled Inverted Pendulum with Roll-joint using Dynamic Variance MPPI",
@@ -125,6 +128,7 @@ export const publications = [
         venue: "IEEE‑RAS International Conference on Humanoid Robots (Humanoids)",
         year: "2024",
         link: "https://doi.org/10.1109/Humanoids58906.2024.10769962",
+        video: "",
     },
     {
         title: "Haptic System to Provide the Realistic Sensation of Virtual Impact",
@@ -132,5 +136,6 @@ export const publications = [
         venue: "JICS",
         year: "2023",
         link: "https://koreascience.or.kr/article/JAKO202304457770199.page",
+        video: "",
     },
 ];

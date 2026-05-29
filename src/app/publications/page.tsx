@@ -18,7 +18,8 @@ export default function Publications() {
                         title: pub.title,
                         subtitle: pub.authors,
                         meta: `${pub.venue}, ${pub.year}`,
-                        link: pub.link
+                        link: pub.link,
+                        video: pub.video
                     }))}
                 />
             </Section>
