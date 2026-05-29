@@ -5,9 +5,9 @@ import { ArrowLeft } from 'lucide-react';
 import { research } from '@/lib/data';
 
 interface PageProps {
-    params: {
+    params: Promise<{
         id: string;
-    };
+    }>;
 }
 
 // This function is required for static export to know which paths to generate
@@ -17,8 +17,9 @@ export async function generateStaticParams() {
     }));
 }
 
-export default function ResearchDetail({ params }: PageProps) {
-    const item = research.find((r) => r.id === params.id);
+export default async function ResearchDetail({ params }: PageProps) {
+    const { id } = await params;
+    const item = research.find((r) => r.id === id);
 
     if (!item) {
         notFound();

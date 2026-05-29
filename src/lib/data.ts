@@ -128,7 +128,7 @@ export const publications = [
         venue: "IEEE‑RAS International Conference on Humanoid Robots (Humanoids)",
         year: "2024",
         link: "https://doi.org/10.1109/Humanoids58906.2024.10769962",
-        video: "",
+        video: "https://www.youtube.com/watch?v=-sy3e1E39BU&list=PLKkDro3QC3eEEPF8-vOzm79dhuDBQMeBF&index=4",
     },
     {
         title: "Haptic System to Provide the Realistic Sensation of Virtual Impact",
