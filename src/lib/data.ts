@@ -1,13 +1,13 @@
 export const personalInfo = {
     name: "Jechan Jeon",
-    role: "M.S. student in Robotics",
-    affiliation: "Korea University & KIST",
+    role: "Research Intern in Robotics",
+    affiliation: "Korea Insititue of Science and Technology (KIST)",
     email: "jeonjechanl@gmail.com",
-    email2: "jeonjechan@gmail.com",
+    email2: "jechan97@kist.re.kr",
     github: "https://github.com/Jechan12",
     linkedin: "https://www.linkedin.com/in/jechan-jeon-630443320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     instagram: "https://instagram.com/i_m_jechan",
-    description: "Interested in motion control, whole-body control, and real-time optimization for legged robots.",
+    description: "Interested in Motion Control, Whole-Body Control, and Real-Time Optimization for Legged-Robots.",
     heroImage: "/profile.jpg",
 };
 
@@ -76,7 +76,7 @@ export const research = [
         title: "QP-based Whole-Body Control",
         description: "Whole-Body Control for wheeled-legged humanoid systems using Quadratic Programming.",
         details: "This research focuses on developing a robust Whole-Body Control (WBC) framework for wheeled-legged robots. By utilizing Quadratic Programming (QP), we optimize the robot's motion to handle complex tasks while maintaining balance and stability. The framework decouples the control of wheels and legs, allowing for agile maneuvers and stable locomotion on uneven terrain.",
-        image: "/research/wbc.jpg", // Placeholder
+        image: "/research/QP_Overview.png", // Placeholder
         videoId: "", // Add YouTube video ID here (e.g., "dQw4w9WgXcQ")
     },
     {
